@@ -1,18 +1,24 @@
 import "./App.css";
+import Search from "./Search";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <div className="Dictionary-header">Dictionary</div>{" "}
-        </header>
-        <input type="search" placeholder="Type a word here" onFocus="true" />
-        <div className="">Get definitions, synonyms, and more</div>
+        <header className="App-header">Dictionary</header>
+        <main>
+          <Search />
+        </main>
+        <div className="results">Get definitions, synonyms, and more</div>
       </div>
-      <footer>
+      <footer className="App-footer">
         React Dictionary Application created by Halle Gregory and
-        <a href="" target="_blank" rel="noopener noreffer">
+        <a
+          href="https://github.com/MissHalle/react-dictionary-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
           open-sourced on GitHub
         </a>
       </footer>

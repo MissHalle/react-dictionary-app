@@ -3,8 +3,20 @@
   max-width: 400px;
 }
 
-.Dictionary-header {
+.App-header {
   font-size: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.results {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.App-footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
 }
