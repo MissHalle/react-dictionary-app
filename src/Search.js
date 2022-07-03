@@ -30,6 +30,7 @@ export default function Search() {
           autoFocus={true}
           onChange={handleKeywordChange}
         />
+        <input className="Submit" type="submit" value="Search" />
       </form>
       <DictionaryResults results={results} />
     </div>
