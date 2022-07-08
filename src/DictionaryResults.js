@@ -2,8 +2,6 @@ import React from "react";
 import DictionaryMeaning from "./DictionaryMeaning";
 
 export default function DictionaryResults(props) {
-  console.log(props.results);
-
   if (props.results) {
     return (
       <div className="DictionaryResults">
