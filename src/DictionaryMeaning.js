@@ -20,6 +20,7 @@ export default function DictionaryMeaning(props) {
                   <em>{definition.example}</em>
                 </div>
                 <div className="col-4">
+                  <strong>Synonyms:</strong>
                   <DictionarySynonyms synonyms={definition.synonyms} />
                 </div>
               </div>

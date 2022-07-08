@@ -10,6 +10,6 @@ export default function DictionarySynonyms(props) {
       </div>
     );
   } else {
-    return "LOADING..";
+    return null;
   }
 }
