@@ -1,0 +1,7 @@
+.Photos img {
+  border-radius: 20px;
+  margin: 10px auto;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+}
