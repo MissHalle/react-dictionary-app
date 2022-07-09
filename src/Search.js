@@ -22,13 +22,13 @@ export default function Search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    const pexelsApiKey =
+    let pexelsApiKey =
       "563492ad6f9170000100000116d69717d47747f68cede5b2ee6b9b8e";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+
     axios
       .get(pexelsApiUrl, {
-        header: headers,
+        headers: { Authorization: `Bearer ${pexelsApiKey}` },
       })
       .then(handlePexelsResponse);
   }
