@@ -12,11 +12,13 @@
 .results {
   font-size: 22px;
   font-weight: 500;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .App-footer {
   font-size: 12px;
   text-align: center;
-  margin-top: 40px;
+  padding: 30px;
+  margin: 50px auto;
+  margin-top: 30px;
 }

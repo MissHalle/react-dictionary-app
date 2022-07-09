@@ -19,7 +19,7 @@ export default function Search() {
   }
 
   function search() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
     const pexelsApiKey =
@@ -59,6 +59,7 @@ export default function Search() {
           />
           <input className="Submit" type="submit" value="Search" />
         </form>
+
         <DictionaryResults results={results} />
         <hr />
         <Photos photos={photos} />

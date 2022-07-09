@@ -1,30 +1,23 @@
 import React from "react";
+import DictionaryExample from "./DictionaryExample";
 import DictionarySynonyms from "./DictionarySynonyms";
+import "./DictionaryMeaning.css";
 
 export default function DictionaryMeaning(props) {
   return (
     <div className="DictionaryMeaning">
       <h3>{props.meaning.partOfSpeech}</h3>
-      {props.meaning.definitions.map(function (definition, index) {
+      {props.meaning.definitions.map(function (definitions, index) {
         return (
           <div key={index}>
-            <div className="container">
-              <div className="row">
-                <div className="col-4">
-                  <strong>Definition: </strong>
-                  {definition.definition}
-                </div>
-                <br />
-                <div className="col-4">
-                  <strong>Example: </strong>
-                  <em>{definition.example}</em>
-                </div>
-                <div className="col-4">
-                  <strong>Synonyms:</strong>
-                  <DictionarySynonyms synonyms={definition.synonyms} />
-                </div>
-              </div>
-            </div>
+            <section className="Definitions">
+              <strong>Definition: </strong>
+              {definitions.definition}
+            </section>
+            <br />
+            <DictionaryExample example={definitions.examples} />
+            <br />
+            <DictionarySynonyms synonyms={definitions.synonyms} />
           </div>
         );
       })}

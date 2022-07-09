@@ -12,7 +12,15 @@ export default function App() {
         <div className="results">Get definitions, synonyms, and more</div>
       </div>
       <footer className="App-footer">
-        React Dictionary Application created by Halle Gregory and
+        This React Dictionary Application was coded by{" "}
+        <a
+          href="https://www.linkedin.com/in/halle-gregory-1387a822b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Halle Gregory
+        </a>{" "}
+        and
         <a
           href="https://github.com/MissHalle/react-dictionary-app"
           target="_blank"

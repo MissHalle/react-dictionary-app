@@ -23,6 +23,6 @@ export default function Photos(props) {
       </div>
     );
   } else {
-    return "Loading";
+    return null;
   }
 }
